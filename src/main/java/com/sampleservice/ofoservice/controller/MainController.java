@@ -23,7 +23,7 @@ public class MainController extends MObject {
         result.set("msg", "/shareBike");
 
         if (requestData.get("interval") != null) {
-            MBaseUtils.generateStringInKBSize(1500, result, (int) requestData.get("interval"));
+            MBaseUtils.generateStringInKBSize(1500, result, (long) requestData.get("interval"));
         }
         return result;
     }
